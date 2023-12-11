@@ -153,7 +153,7 @@ hiptensorStatus_t hiptensorInitTensorDescriptor(const hiptensorHandle_t*     han
 
     if((lens == nullptr)
        || ((dataType != HIP_R_16F) && (dataType != HIP_R_16BF) && (dataType != HIP_R_32F)
-           && (dataType != HIP_R_64F && (dataType != HIP_C_32F)
+           && (dataType != HIP_R_64F) && (dataType != HIP_C_32F)
            && (dataType != HIP_C_64F))
        || unaryOp != HIPTENSOR_OP_IDENTITY)
     {
