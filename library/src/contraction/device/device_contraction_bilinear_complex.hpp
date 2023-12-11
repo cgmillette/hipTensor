@@ -330,7 +330,7 @@ namespace ck
                         };
 
                         decompGrid(mA_real, mA_imag, (const ComplexA*)p_a_grid, elementsA);
-                        decompGrid(mA_real, mB_imag, (const ComplexA*)p_b_grid, elementsB);
+                        decompGrid(mB_real, mB_imag, (const ComplexA*)p_b_grid, elementsB);
                         decompGrid(mD_real, mD_imag, (const ComplexA*)p_ds_grid[0], elementsD);
                         decompGrid(mE_real, mE_imag, (const ComplexA*)p_e_grid, elementsE);
 

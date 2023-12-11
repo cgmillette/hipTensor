@@ -380,7 +380,7 @@ namespace ck
 
                         // Decompose the incoming data from AOS->SOA
                         decompGrid(mA_real, mA_imag, (const ComplexA*)p_a_grid, elementsA);
-                        decompGrid(mA_real, mB_imag, (const ComplexA*)p_b_grid, elementsB);
+                        decompGrid(mB_real, mB_imag, (const ComplexA*)p_b_grid, elementsB);
                         decompGrid(mE_real, mE_imag, (const ComplexA*)p_e_grid, elementsE);
 
                         // Allocate extra space bilinear op.
