@@ -638,7 +638,7 @@ namespace hiptensor
                         (hip_bfloat16*)reference.get(),
                         elementsCD);
             }
-            else if(DDataType == HIP_R_32F || DDataType == HIP_C_32F))
+            else if(DDataType == HIP_R_32F || DDataType == HIP_C_32F)
             {
                 std::tie(mValidationResult, mMaxRelativeError) = compareEqualLaunchKernel<float>(
                     (float*)resource->deviceD().get(), (float*)reference.get(), elementsCD);

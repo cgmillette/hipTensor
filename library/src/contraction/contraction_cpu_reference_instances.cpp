@@ -117,7 +117,8 @@ namespace hiptensor
                                         hipFloatComplex,
                                         ck::tensor_operation::element_wise::PassThrough,
                                         ck::tensor_operation::element_wise::PassThrough,
-                                        ck::tensor_operation::element_wise::Bilinear>());
+                                        ck::tensor_operation::element_wise::Bilinear,
+                                        float>());
 
         // Bilinear f64
         registerSolutions(
@@ -160,7 +161,8 @@ namespace hiptensor
                                         hipDoubleComplex,
                                         ck::tensor_operation::element_wise::PassThrough,
                                         ck::tensor_operation::element_wise::PassThrough,
-                                        ck::tensor_operation::element_wise::Bilinear>());
+                                        ck::tensor_operation::element_wise::Bilinear,
+                                        double>());
 
         // Scale f16
         registerSolutions(
@@ -247,7 +249,8 @@ namespace hiptensor
                                         hipFloatComplex,
                                         ck::tensor_operation::element_wise::PassThrough,
                                         ck::tensor_operation::element_wise::PassThrough,
-                                        ck::tensor_operation::element_wise::Scale>());
+                                        ck::tensor_operation::element_wise::Scale,
+                                        float>());
 
         // Scale f64
         registerSolutions(
@@ -290,6 +293,7 @@ namespace hiptensor
                                         hipDoubleComplex,
                                         ck::tensor_operation::element_wise::PassThrough,
                                         ck::tensor_operation::element_wise::PassThrough,
-                                        ck::tensor_operation::element_wise::Scale>());
+                                        ck::tensor_operation::element_wise::Scale,
+                                        double>());
     }
 } // namespace hiptensor
